@@ -50,6 +50,7 @@ ExportedObj/
 *.pidb
 *.booproj
 *.svd
+*.vsconfig
 *.pdb
 *.mdb
 *.opendb
