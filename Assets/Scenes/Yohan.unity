@@ -131,8 +131,9 @@ GameObject:
   - component: {fileID: 487745993}
   - component: {fileID: 487745995}
   - component: {fileID: 487745996}
+  - component: {fileID: 487745997}
   m_Layer: 0
-  m_Name: Square
+  m_Name: Player
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -206,7 +207,7 @@ Transform:
   m_GameObject: {fileID: 487745991}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.58, y: 0.6, z: 0}
+  m_LocalPosition: {x: -4.4, y: 0.04, z: 0}
   m_LocalScale: {x: 0.4717, y: 0.4717, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -224,7 +225,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: dee4ee6dae63cb44299bf63d3f9a81f5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::PlayerController
-  speed: 5
+  speed: 10
 --- !u!114 &487745996
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -343,6 +344,20 @@ MonoBehaviour:
   m_DefaultActionMap: Player
   m_SplitScreenIndex: -1
   m_Camera: {fileID: 0}
+--- !u!114 &487745997
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 487745991}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: da26d70f012c54344b072f9ddad30a5a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::AutoShoot
+  bulletPrefab: {fileID: 99927308236004262, guid: 840b3bdece0da3f408cdcb20faf24969, type: 3}
+  attackSpeed: 1
 --- !u!1 &902253559
 GameObject:
   m_ObjectHideFlags: 0
