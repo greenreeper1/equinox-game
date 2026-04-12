@@ -38,6 +38,17 @@ public abstract class BaseEnemy : MonoBehaviour, IEnemy
     public abstract void Attack();
     public abstract void Move();
 
+    public virtual void TakeDamage(float damage)
+    {
+        data.health -= damage;
+        if (data.health <= 0) Die();
+    }
+
+    public virtual void Die()
+    {
+        Destroy(gameObject);
+    }
+
     protected float DistanceToPlayer()
         => Vector2.Distance(transform.position, player.position);
 

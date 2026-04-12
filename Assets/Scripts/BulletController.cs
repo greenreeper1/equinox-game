@@ -29,8 +29,13 @@ public class BulletController : MonoBehaviour
     {
         if (collision.CompareTag("Monster"))
         {
-            Debug.Log("Bullet hit an enemy!");
-            Destroy(gameObject);
+            IEnemy enemy = collision.GetComponent<IEnemy>();
+            if (enemy != null)
+            {
+                enemy.TakeDamage(50f); 
+                Destroy(gameObject);
+            }
+            
         }
     }
 
