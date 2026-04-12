@@ -5,6 +5,10 @@ public class MeleeEnemy : BaseEnemy
     protected override void OnUpdate()
     {
         Move();
+        if(DistanceToPlayer() < 0.5f)
+        {
+            Attack();
+        }
     }
 
     public override void Move()
