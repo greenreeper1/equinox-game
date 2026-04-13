@@ -134,6 +134,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::MeleeEnemy
   data: {fileID: 11400000, guid: c35308d6464e0f94c97a048afb94eb0e, type: 2}
+  config: {fileID: 11400000, guid: 24083a0b04818f74eb78d9d2e6105083, type: 2}
 --- !u!61 &9010582071124738314
 BoxCollider2D:
   m_ObjectHideFlags: 0

@@ -134,6 +134,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::RangedEnemy
   data: {fileID: 11400000, guid: 4443037f7f602054a85144b79c2ac17b, type: 2}
+  config: {fileID: 11400000, guid: 24083a0b04818f74eb78d9d2e6105083, type: 2}
   projectilePrefab: {fileID: 99927308236004262, guid: f8c8cfcf61393594b8e14fe35228e47e, type: 3}
   projectileSpeed: 10
   preferredDistance: 5

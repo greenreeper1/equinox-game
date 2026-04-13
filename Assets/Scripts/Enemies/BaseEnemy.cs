@@ -4,10 +4,12 @@ using UnityEngine;
 public abstract class BaseEnemy : MonoBehaviour, IEnemy
 {
     [SerializeField] protected EnemyData data;
+    [SerializeField] protected BalanceConfig config;
 
     protected Transform player;
     protected Rigidbody2D rb;
     protected float attackTimer;
+    protected float currentHealth;
 
     protected virtual void Awake()
     {
@@ -31,6 +33,7 @@ public abstract class BaseEnemy : MonoBehaviour, IEnemy
     public virtual void Initialize(EnemyData enemyData)
     {
         data = enemyData;
+        currentHealth = data.health;
     }
 
     protected virtual void OnUpdate() { }
@@ -40,14 +43,19 @@ public abstract class BaseEnemy : MonoBehaviour, IEnemy
 
     public virtual void TakeDamage(float damage)
     {
-        data.health -= damage;
-        if (data.health <= 0) Die();
+        float reduction = GetDamageReduction();
+        currentHealth -= damage * (1 - reduction);
+        if (currentHealth <= 0) Die();
     }
 
     public virtual void Die()
     {
+        
         Destroy(gameObject);
     }
+
+    protected float GetDamageReduction()
+        => data.armor / (data.armor + config.armorK);
 
     protected float DistanceToPlayer()
         => Vector2.Distance(transform.position, player.position);

@@ -29,6 +29,7 @@ public class BulletController : MonoBehaviour
     {
         if (collision.CompareTag("Monster"))
         {
+            //TODO : Si augmentation "balles rebondissantes" est implémentée, faire rebondir la balle au lieu de la détruire
             IEnemy enemy = collision.GetComponent<IEnemy>();
             if (enemy != null)
             {
