@@ -8,6 +8,7 @@ public class GameManager : MonoBehaviour
     public DayState currentState;
     public DayState previousState;
     public SpriteRenderer playerSprite;
+    public AugmentManager augmentManager;
 
     private void Awake()
     {
@@ -49,8 +50,8 @@ public class GameManager : MonoBehaviour
         {
             previousState = currentState;
             currentState = DayState.UPGRADING;
+            augmentManager.ShowAugments();
             // TODO : Call the method to choose an upgrade
-            SwitchDayState(); // Delete this when the upgrades are made. It is just here to see the day / night shift
         }
         else if (currentState == DayState.UPGRADING)
         {
