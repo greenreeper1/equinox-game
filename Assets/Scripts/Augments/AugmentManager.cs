@@ -8,16 +8,13 @@ public class AugmentManager : MonoBehaviour
     public AugmentData[] allAugments;
     public AugmentUI[] slots;
 
+    public bool canDoubleShot = false;
+    public bool canBackShot = false;
+    public bool canProjectileBounce = false;
+
     public void ApplyAugment(AugmentData augment)
     {
-        switch (augment.augmentType)
-        {
-            case AugmentType.Damage:
-                playerStats.damage *= (1 + augment.multiplier);
-                break;
-            default:
-                break;
-        }
+        augment.augmentType.Apply(playerStats, augment.value);
     }
 
     public void ShowAugments()

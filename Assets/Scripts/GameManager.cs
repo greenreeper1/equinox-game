@@ -51,7 +51,6 @@ public class GameManager : MonoBehaviour
             previousState = currentState;
             currentState = DayState.UPGRADING;
             augmentManager.ShowAugments();
-            // TODO : Call the method to choose an upgrade
         }
         else if (currentState == DayState.UPGRADING)
         {
