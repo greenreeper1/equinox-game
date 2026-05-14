@@ -1,5 +1,6 @@
 using UnityEngine;
 
+[CreateAssetMenu(menuName = "Game/AugmentTypes/BounceProj")]
 public class AugmentBounceProj : AugmentType
 {
     public override void Apply(PlayerData stats, float value)

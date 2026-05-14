@@ -23,6 +23,7 @@ public class AugmentUI : MonoBehaviour
 
     public void OnClick()
     {
+        Debug.Log(currentAugment);
         augmentManager.ApplyAugment(currentAugment);
     }
 }

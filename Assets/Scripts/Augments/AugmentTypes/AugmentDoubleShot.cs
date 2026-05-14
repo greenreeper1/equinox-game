@@ -1,5 +1,6 @@
 using UnityEngine;
 
+[CreateAssetMenu(menuName = "Game/AugmentTypes/DoubleShot")]
 public class AugmentDoubleShot : AugmentType
 {
     public override void Apply(PlayerData stats, float value)

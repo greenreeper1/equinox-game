@@ -1,5 +1,6 @@
 using UnityEngine;
 
+[CreateAssetMenu(menuName = "Game/AugmentTypes/MoveSpeed")]
 public class AugmentMoveSpeed : AugmentType
 {
     public override void Apply(PlayerData stats, float value)

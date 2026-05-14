@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: Armor
   m_EditorClassIdentifier: Assembly-CSharp::AugmentData
   augmentName: Armor
-  description: Grants you armor that reduce damage by 10%
+  description: Grants you armor that reduce damage by ${value}%
   icon: {fileID: 0}
-  augmentType: 3
-  multiplier: 0.1
+  augmentType: {fileID: 11400000, guid: cab90482c9b43e748b3dd98bd8acc388, type: 2}
+  value: 10

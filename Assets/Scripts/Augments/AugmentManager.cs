@@ -14,6 +14,9 @@ public class AugmentManager : MonoBehaviour
 
     public void ApplyAugment(AugmentData augment)
     {
+        Debug.Log(playerStats);
+        Debug.Log(augment.value);
+        Debug.Log(augment.augmentType);
         augment.augmentType.Apply(playerStats, augment.value);
     }
 

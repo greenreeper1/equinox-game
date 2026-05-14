@@ -1,5 +1,6 @@
 using UnityEngine;
 
+[CreateAssetMenu(menuName = "Game/AugmentTypes/HP")]
 public class AugmentHP : AugmentType
 {
     public override void Apply(PlayerData stats, float value)

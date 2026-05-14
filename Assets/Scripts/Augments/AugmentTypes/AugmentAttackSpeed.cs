@@ -1,5 +1,6 @@
 using UnityEngine;
 
+[CreateAssetMenu(menuName = "Game/AugmentTypes/AttackSpeed")]
 public class AugmentAttackSpeed : AugmentType
 {
     public override void Apply(PlayerData stats, float value)

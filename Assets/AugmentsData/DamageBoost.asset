@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: DamageBoost
   m_EditorClassIdentifier: Assembly-CSharp::AugmentData
   augmentName: Damage Boost
-  description: Boost the damage the player is doing by 25%. (100 -> 125)
+  description: Boost the damage the player is doing by ${value * 100}%.
   icon: {fileID: 0}
-  augmentType: 0
-  multiplier: 0.25
+  augmentType: {fileID: 11400000, guid: acd553ad2bfc7774e8e1be76f93075a4, type: 2}
+  value: 0.1

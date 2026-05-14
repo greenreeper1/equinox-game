@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: AttackSpeed
   m_EditorClassIdentifier: Assembly-CSharp::AugmentData
   augmentName: Attack Speed Bonus
-  description: Increase your attack speed by 10%. (1 -> 1.1)
+  description: Increase your attack speed by ${value * 100}%.
   icon: {fileID: 0}
-  augmentType: 1
-  multiplier: 0.1
+  augmentType: {fileID: 11400000, guid: f4fd4b56e74dad54eac7b358b09f50da, type: 2}
+  value: 0.1

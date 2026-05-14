@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: HP
   m_EditorClassIdentifier: Assembly-CSharp::AugmentData
   augmentName: HP Boost
-  description: Boost your HP by 50% (100 -> 150)
+  description: Boost your HP by ${value * 100}%.
   icon: {fileID: 0}
-  augmentType: 2
-  multiplier: 0.5
+  augmentType: {fileID: 11400000, guid: c9b670336258d7948bf50b8f418c38e6, type: 2}
+  value: 0.1

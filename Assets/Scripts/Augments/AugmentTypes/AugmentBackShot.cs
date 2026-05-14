@@ -1,5 +1,6 @@
 using UnityEngine;
 
+[CreateAssetMenu(menuName = "Game/AugmentTypes/BackShot")]
 public class AugmentBackShot : AugmentType
 {
     public override void Apply(PlayerData stats, float value)

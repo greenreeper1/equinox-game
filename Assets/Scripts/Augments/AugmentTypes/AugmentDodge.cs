@@ -1,5 +1,6 @@
 using UnityEngine;
 
+[CreateAssetMenu(menuName = "Game/AugmentTypes/Dodge")]
 public class AugmentDodge : AugmentType
 {
     public override void Apply(PlayerData stats, float value)

@@ -1,5 +1,6 @@
 using UnityEngine;
 
+[CreateAssetMenu(menuName = "Game/AugmentTypes/CritChance")]
 public class AugmentCritChance : AugmentType
 {
     public override void Apply(PlayerData stats, float value)

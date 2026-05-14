@@ -1,5 +1,6 @@
 using UnityEngine;
 
+[CreateAssetMenu(menuName = "Game/AugmentTypes/Armor")]
 public class AugmentArmor : AugmentType
 {
     public override void Apply(PlayerData stats, float value)
