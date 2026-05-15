@@ -407,6 +407,8 @@ GameObject:
   - component: {fileID: 993028478}
   - component: {fileID: 993028477}
   - component: {fileID: 993028480}
+  - component: {fileID: 993028482}
+  - component: {fileID: 993028481}
   m_Layer: 0
   m_Name: GameManager
   m_TagString: Untagged
@@ -458,7 +460,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2fb1f4b07a936534987bd8eb172448b8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::AugmentManager
-  playerStats: {fileID: 11400000, guid: 4fd9cf43b4c0c0d449c671999f0456f3, type: 2}
+  playerStats: {fileID: 993028482}
   allAugments:
   - {fileID: 11400000, guid: 639acce8c08c53e4c821df7a301deeab, type: 2}
   - {fileID: 11400000, guid: 7e2ae3d76d7f51845895062ae17293aa, type: 2}
@@ -471,6 +473,40 @@ MonoBehaviour:
   canDoubleShot: 0
   canBackShot: 0
   canProjectileBounce: 0
+--- !u!114 &993028481
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 993028476}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 623f5e23b648ee04189800d2bd044526, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::PlayerStatsRuntime
+  health: 0
+  damage: 0
+  armor: 0
+  moveSpeed: 0
+  attackSpeed: 0
+  dodgeChance: 0
+  criticalChance: 0
+  lifesteal: 0
+--- !u!114 &993028482
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 993028476}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0f5c8bc61d946a440b607a7c88aff3d0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::PlayerStats
+  baseData: {fileID: 11400000, guid: 4fd9cf43b4c0c0d449c671999f0456f3, type: 2}
+  runtimeData: {fileID: 993028481}
 --- !u!1 &1243477938
 GameObject:
   m_ObjectHideFlags: 0
