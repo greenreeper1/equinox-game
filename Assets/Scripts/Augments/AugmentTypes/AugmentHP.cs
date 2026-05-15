@@ -3,7 +3,7 @@ using UnityEngine;
 [CreateAssetMenu(menuName = "Game/AugmentTypes/HP")]
 public class AugmentHP : AugmentType
 {
-    public override void Apply(PlayerData stats, float value)
+    public override void Apply(PlayerStatsRuntime stats, float value)
     {
         Debug.Log($"Health before increase :  {stats.health}");
         stats.health *= (1 + value);

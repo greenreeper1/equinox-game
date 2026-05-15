@@ -3,7 +3,7 @@ using UnityEngine;
 [CreateAssetMenu(menuName = "Game/AugmentTypes/LifeSteal")]
 public class AugmentLifeSteal : AugmentType
 {
-    public override void Apply(PlayerData stats, float value)
+    public override void Apply(PlayerStatsRuntime stats, float value)
     {
         Debug.Log($"Lifesteal before increase :  {stats.lifesteal}");
         stats.lifesteal += value;

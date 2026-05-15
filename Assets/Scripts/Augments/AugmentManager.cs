@@ -3,7 +3,7 @@ using UnityEngine;
 public class AugmentManager : MonoBehaviour
 {
 
-    public PlayerData playerStats;
+    public PlayerStats playerStats;
 
     public AugmentData[] allAugments;
     public AugmentUI[] slots;
@@ -17,7 +17,7 @@ public class AugmentManager : MonoBehaviour
         Debug.Log(playerStats);
         Debug.Log(augment.value);
         Debug.Log(augment.augmentType);
-        augment.augmentType.Apply(playerStats, augment.value);
+        augment.augmentType.Apply(playerStats.runtimeData, augment.value);
     }
 
     public void ShowAugments()
